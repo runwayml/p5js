@@ -138,6 +138,7 @@ const createUI = () => {
     statusP.class('status-off');
 }
 
+// Status functions
 const setOffStatus = () => {
     statusLED.removeClass('led-on');
     statusLED.addClass('led-off');
@@ -154,6 +155,7 @@ const setOnStatus = () => {
     statusP.elt.innerText = 'Connected';
 }
 
+// Ping to check if connected to Runway
 const ping = async (url) => {
     try {
         let data = await fetch(url);
@@ -164,6 +166,7 @@ const ping = async (url) => {
     }
 }
 
+// Save current canvas
 const saveSketch = () => {
     let date = new Date().toISOString();
     save(`sketch${date}.jpg`);
