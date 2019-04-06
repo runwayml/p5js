@@ -62,6 +62,46 @@ p {
     line-height: 37px;
 }
 
+#status {
+    margin: 8px 35px;
+    display: flex;
+    justify-content: center;
+}
+
+#status-led {
+    margin: auto 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.led-off {
+    background-color: #F00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 2px 1px, 
+                inset #440000 0 -1px 6px, 
+                rgba(255, 0, 0, 0.5) 0 2px 4px;
+}
+
+.led-on {
+    background-color: #0F0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 2px 1px, 
+                inset #440000 0 -1px 6px, 
+                rgba(0, 255, 0, 0.5) 0 2px 4px;
+}
+
+#status-p {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.status-off {
+    color: red;
+}
+
+.status-on {
+    color: green;
+}
+
 #ctrl {
     margin: 8px 35px;
     display: flex;

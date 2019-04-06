@@ -32,7 +32,10 @@ let routeInput,
     saveButton, 
     colPicker, 
     strokeSlider, 
-    clearButton;
+    clearButton,
+    statusLED,
+    statusP;
+let port;
 
 ////////////////////
 // Runway Functions
@@ -90,8 +93,9 @@ const createUI = () => {
     routeInput.parent(('#setup'));
     routeInput.id('routeInput');
     routeInput.input(() => {
-        let port = routeInput.value();
+        port = routeInput.value();
         runwayGet = `http://localhost:${port}/data`
+        ping(runwayGet);
     });
 
     getButton = createButton('PhotoSketch');
@@ -122,6 +126,42 @@ const createUI = () => {
     colPicker = createColorPicker('#0000ff');
     colPicker.parent('#ctrl');
     colPicker.id('colPicker');
+
+    statusLED = createDiv();
+    statusLED.parent(('#status'));
+    statusLED.id('status-led');
+    statusLED.class('led-off');
+
+    statusP = createP('Not Connected');
+    statusP.parent(('#status'));
+    statusP.id('status-p')
+    statusP.class('status-off');
+}
+
+const setOffStatus = () => {
+    statusLED.removeClass('led-on');
+    statusLED.addClass('led-off');
+    statusP.removeClass('status-on');
+    statusP.addClass('status-off');
+    statusP.elt.innerText = 'Not Connected';
+}
+
+const setOnStatus = () => {
+    statusLED.removeClass('led-off');
+    statusLED.addClass('led-on');
+    statusP.removeClass('status-off');
+    statusP.addClass('status-on');
+    statusP.elt.innerText = 'Connected';
+}
+
+const ping = async (url) => {
+    try {
+        let data = await fetch(url);
+        setOnStatus();
+    } catch(error) {
+        console.error(error);
+        setOffStatus();
+    }
 }
 
 const saveSketch = () => {
@@ -140,6 +180,7 @@ function setup() {
     background('#fefefe');
 
     createUI();
+    ping(runwayGet);
 }
 
 function draw() {}
