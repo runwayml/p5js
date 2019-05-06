@@ -54,15 +54,16 @@ function createBtn() {
 
 function image2Txt() {
   if (myCanvas && myCanvas.elt) {
+    // Get canvas HTML element
     const canvasElt = myCanvas.elt;
+    // Get image data from canvas
     const imageData = canvasElt.toDataURL('image/jpeg', 1.0);
     const postData = {
       "image": imageData
     };
-    // Send HTTP Post request to Runway with text, runway will return the output image src
+    // Send HTTP Post request to Runway with image data, runway will return the image caption
     httpPost(url, 'json', postData, (output) => {
       if (output && output.results && output.results[0]) {
-        console.log('results: ', output.results[0].caption)
         createElement('h2', output.results[0].caption);
 
         // Call image2Txt again
