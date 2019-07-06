@@ -6,7 +6,7 @@ A collection of examples and tutorials on how to use Runway with [p5.js](http://
 
 * PhotoSketch:
   * [ColoringBook](PhotoSketch/ColoringBook/)
-  * [ColoringBook](PhotoSketch_Websockets/)
+  * [Photosketch with Webcam](PhotoSketch_Websockets/)
 * AttnGAN:
   * [Text to Image](AttnGAN/)
 * im2txt:
