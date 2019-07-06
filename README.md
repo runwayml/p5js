@@ -6,14 +6,14 @@ A collection of examples and tutorials on how to use Runway with [p5.js](http://
 
 * PhotoSketch:
   * [ColoringBook](PhotoSketch/ColoringBook/)
-  * [Photosketch with Webcam](PhotoSketch/Photosketch_Websockets/)
+  * [Photosketch with Webcam](PhotoSketch/PhotoSketch_Websockets/)
 * AttnGAN:
   * [Text to Image](AttnGAN/)
 * im2txt:
   * [im2txt with Webcam](im2txt/)
 * CycleGAN:
-  * [CycleGAN with Webcam](CycleGAN/Cyclegan_Websockets/)
-  * [CycleGAN with HTTP](CycleGAN/Cyclegan_HTTP/)
+  * [CycleGAN with Webcam](CycleGAN/CycleGAN_Websockets/)
+  * [CycleGAN with HTTP](CycleGAN/CycleGAN_HTTP/)
 
 ## Contributing
 
