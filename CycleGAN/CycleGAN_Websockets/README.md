@@ -1,9 +1,9 @@
 # Runway CycleGAN model with websockets and p5.js
 
 ## Get Started
-1. Open Runway, add CycleGAN_Websockets model to your workspace
-2. Select "Network" as input and ouput, Run the model
+1. Open Runway, add CycleGAN_Websockets model to your workspace.
     Your Runway interface should look like this:
+
     <img src="images/interface.png" width="500">
 
 3. Run the sketch

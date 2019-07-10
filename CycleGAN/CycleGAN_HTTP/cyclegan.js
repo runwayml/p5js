@@ -6,32 +6,41 @@ let post_image;
 let send_btn;
 let newimg;
 let img;
-let input_image;
 
 function setup(){
     //create the canvas
-    cnv = createCanvas(500, 500);
-    cnv.parent("#the_canvas")
-    cnv.position(0, 30);
+    cnv = createCanvas(windowWidth, 350);
+    cnv.parent("#p5canvas")
+    cnv.position(0, 0);
 
     createMenu()
-
-    input_image = createFileInput(handleFile);
-    input_image.position(80, 60);
+    fill(255);
+    text('drop file', width / 2, height / 2);
+    cnv.drop(handleFile);
 }
 
 function draw(){
   //draw the input image from handleFile
   if(img){
-    image(img, 80, 80, 500, 500);
+    fill(255);
+    imageMode(CENTER);
+    image(img, width/2, 250, 300, 300);
   }
 }
 
 function createMenu(){
-   // create the send button
+   //create title
+    textSize(20);
+    fill(255);
+    textAlign(CENTER);
+    text("CycleGAN Demo: Sending Images via p5.js to Runway", width/2, 40);
+
+    // create the send button
     send_btn = createButton("SEND IMAGE");
     send_btn.mousePressed(sendImages);
+    send_btn.addClass("btn btn-sm btn-primary");
     send_btn.parent("#send_btn");
+    send_btn.position(500, 380)
 }
 
 function handleFile(file) {
@@ -48,8 +57,8 @@ function newDrawing(data){
     if(data && data.image) {
       newimg = createImg(data.image);
       newimg.attribute('width', 400)
-      newimg.attribute('height', 400)
-      newimg.position(700, 80);
+      newimg.attribute('height', 400);
+      newimg.position(width/2 - 200, 440);
     }
 }
 

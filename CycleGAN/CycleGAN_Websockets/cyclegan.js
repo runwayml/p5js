@@ -77,10 +77,17 @@ function setup(){
     cnv.style('z-index', '-1');
     cnv.position(0, 0);
     background(0);
+    createMenu();
 }
 
-function draw(){
+function createMenu(){
+  //create title
+   textSize(20);
+   fill(255);
+   textAlign(CENTER);
+   text("CycleGAN Demo: Sending Images via p5.js to Runway", width/2, 40);
 }
+
 
 function newDrawing(data){
     if(data && data.image) {
@@ -88,7 +95,13 @@ function newDrawing(data){
       raw.onload = function() {
           img = createImage(raw.width, raw.height);
           img.drawingContext.drawImage(raw, 0, 0);
-          image(img, 400, 0, 800, 800); 
+          imageMode(CENTER)
+          image(img, width/2, height/1.3, 400, 400); 
         }
     }
+}
+
+function windowResized(){
+  background(0);
+  resizeCanvas(windowWidth, windowHeight);
 }
