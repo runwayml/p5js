@@ -12,7 +12,7 @@
     $ python -m SimpleHTTPServer     # $ python3 -m http.server (if you are using python 3)
     ```
     Go to `localhost:8000` in your browser
-3. Enter some text into the text field. Adjust the slider to change the temperature (how "creative" the text will be). Hit click the "Send Text" button.
+3. Enter some text into the text field. Adjust the slider to change the temperature (how "creative" the text will be). Click the "Send Text" button.
     You should be able to see results like this:
     
     <img src="images/header.png" width="500">
