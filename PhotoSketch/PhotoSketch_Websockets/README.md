@@ -12,7 +12,7 @@
     $ python -m SimpleHTTPServer     # $ python3 -m http.server (if you are using python 3)
     ```
     Go to `localhost:8000` in your browser
-4. Click the "Start" button.
+3. Click the "Start" button.
     You should be able to see results like this:
     
     <img src="images/header.png" width="500">
