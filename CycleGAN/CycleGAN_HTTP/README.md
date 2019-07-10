@@ -6,13 +6,13 @@
 
     <img src="images/interface.png" width="500">
 
-3. Run the sketch
+2. Run the sketch
     Go to current directory
     ```
     $ python -m SimpleHTTPServer     # $ python3 -m http.server (if you are using python 3)
     ```
     Go to `localhost:8000` in your browser
-4. Drag an image to the interface and press "Send Image".
+3. Drag an image to the interface and press "Send Image".
     You should be able to see results like this:
     
     <img src="images/header.png" width="500">
