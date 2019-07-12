@@ -21,19 +21,20 @@
 
 let raw = new Image();
 
-let url = 'http://localhost:8000/query';
+// connect to runway via HTTP
+let url = 'http://localhost:8001/query';
 
 
-let send_btn;
+//define variables
 let input_text;
-let output_text;
-let prompt_value;
-let input_slider;
-let slider_val;
-let text_display;
+let post_image;
+let send_btn;
+let newimg;
+let img;
 
 
 function setup(){
+    //create the canvas 
     cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent("#p5canvas")
     cnv.style('z-index', '-1');
@@ -41,60 +42,52 @@ function setup(){
 
     createMenu()
 
+    //create a text input with P5 Dom Library
     input_text = createInput('');
     input_text.position(0, 100);
-    input_text.input(myInputEvent);
+    input_text.input(sendText);
     input_text.addClass("form-control");
     input_text.parent("input")
-
-    input_slider = createSlider(0, 120, 20, 1);
-    input_slider.position(0, 240);
-    input_slider.parent("input")
-    input_slider.addClass("slider")
-}
-
-
-function createMenu(){
-   
-
-    send_btn = createButton("Send Text");
-    send_btn.mousePressed(sendText);
-    send_btn.addClass("btn btn-lg btn-primary");
-    send_btn.parent("#send_btn");
-    send_btn.position(0, 150);
 }
 
 function draw(){
-  if(output_text){
-    textAlign(LEFT);
-    textSize(12);
+  //draw the input image from handleFile
+  if(img){
     fill(255);
-    strokeWeight(1)
-    text(output_text, 300, 300, 800, height);
+    imageMode(CENTER);
+    image(img, width/2, 250, 300, 300);
   }
 }
 
+function createMenu(){
+    //a title for our sketch
+    textSize(20);
+    fill(255);
+    textAlign(CENTER);
+    text("ATTN GAN Demo: Sending Text via p5.js to Runway", width/2, 40);
+}
+
 function newDrawing(data){
-    if(data && data.text) {
-      output_text = data.text;
+  //get the results form Runway
+  //if there is data with a key of result
+  //create an image
+    if(data && data.result) {
+      newimg = createImg(data.result);
+      newimg.attribute('width', 400)
+      newimg.attribute('height', 400)
+      newimg.position(500, 280);
     }
 }
 
-function myInputEvent() {
-  prompt_value = this.value()
-}
 
 function sendText() {
+  //send the text to Runway via HTTP. The this.value is the value
+  //of the input text
+    console.log('you are typing: ', this.value());
 
-   console.log(prompt_value);
-   var slider_val = input_slider.value();
-   console.log(slider_val);
-
-   postData = { prompt: prompt_value, seed: slider_val};
-  
+    postData = { caption: this.value()};
 
   httpPost(url, 'json', postData, function(result) {
-    clear()
     newDrawing(result)
   });
 }
