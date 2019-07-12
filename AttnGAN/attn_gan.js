@@ -22,7 +22,7 @@
 let raw = new Image();
 
 // connect to runway via HTTP
-let url = 'http://localhost:8001/query';
+let url = 'http://localhost:8000/query';
 
 
 //define variables
