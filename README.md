@@ -18,8 +18,6 @@ A collection of examples and tutorials on how to use Runway with [p5.js](http://
   * [Fast Style Transfer with Webcam](FastStyleTransfer/)
 * GPT-2:
   * [GPT-2 with HTTP](GPT2/)
-* PoseNet:
-  * [PoseNet with Webcam](PoseNet/)
 
 ## Contributing
 
