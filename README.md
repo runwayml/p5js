@@ -1,23 +1,27 @@
-# Runway + p5.js
+# RunwayML + p5.js
 
-A collection of examples and tutorials on how to use Runway with [p5.js](http://p5js.org/).
+A collection of examples and tutorials on how to use RunwayML with [p5.js](http://p5js.org/).
+
+More RunwayML networking examples [here](https://learn.runwayml.com/#/networking/examples).
+
+🎉Community Contribution
 
 ## Examples
 
-* PhotoSketch:
-  * [ColoringBook](PhotoSketch/ColoringBook/)
-  * [Photosketch with Webcam](PhotoSketch/PhotoSketch_Websockets/)
-* AttnGAN:
-  * [Text to Image](AttnGAN/)
-* im2txt:
-  * [im2txt with Webcam](im2txt/)
-* CycleGAN:
-  * [CycleGAN with Webcam](CycleGAN/CycleGAN_Websockets/)
-  * [CycleGAN with HTTP](CycleGAN/CycleGAN_HTTP/)
-* Fast Style Transfer:
-  * [Fast Style Transfer with Webcam](FastStyleTransfer/)
-* GPT-2:
-  * [GPT-2 with HTTP](GPT2/)
+### HTTP
+ * [Create Contour Drawings--Coloring Book--with PhotoSketch](PhotoSketch/ColoringBook/) by [JP Yepez](https://www.jpyepez.com) 🎉
+ * [Image Translation with CycleGAN](CycleGAN/CycleGAN_HTTP/) by [maybay21](https://github.com/maybay21) 🎉
+ * [Generate Images from Text with AttnGAN](AttnGAN/) by [maybay21](https://github.com/maybay21) 🎉 
+ * [Generate Text from Images with im2text](im2txt/) by [Yining Shi](https://1023.io) 🎉
+ * [Generate Text with GPT-2](GPT2/) by [maybay21](https://github.com/maybay21) 🎉
+
+
+### Socket.IO
+* [Create Contour Drawings II with PhotoSketch](PhotoSketch/PhotoSketch_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
+* [Image Fast Style Transfer with Webcam](FastStyleTransfer/) by [maybay21](https://github.com/maybay21) 🎉
+* [Image Translation with CycleGAN](CycleGAN/CycleGAN_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
+
+  
 
 ## Contributing
 
