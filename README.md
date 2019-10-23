@@ -1,6 +1,6 @@
 # RunwayML + p5.js
 
-A collection of examples and tutorials on how to use RunwayML with [p5.js](http://p5js.org/).
+A collection of examples and tutorials on how to use [RunwayML](https://runwayml.com/) with [p5.js](http://p5js.org/).
 
 More RunwayML networking examples [here](https://learn.runwayml.com/#/networking/examples).
 
@@ -22,7 +22,6 @@ More RunwayML networking examples [here](https://learn.runwayml.com/#/networking
 * [Image Translation with CycleGAN](CycleGAN/CycleGAN_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
 
   
-
 ## Contributing
 
-This is still a work in progress. Contributions are welcomed!
+This is still a work in progress. Contributions welcome!
