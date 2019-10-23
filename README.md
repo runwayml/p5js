@@ -9,7 +9,7 @@ More RunwayML networking examples [here](https://learn.runwayml.com/#/networking
 ## Examples
 
 ### HTTP
- * [Create Contour Drawings--Coloring Book--with PhotoSketch](PhotoSketch/ColoringBook/) by [JP Yepez](https://www.jpyepez.com) 🎉
+ * [Create Contour Drawings I with PhotoSketch (Coloring Book)](PhotoSketch/ColoringBook/) by [JP Yepez](https://www.jpyepez.com) 🎉
  * [Image Translation with CycleGAN](CycleGAN/CycleGAN_HTTP/) by [maybay21](https://github.com/maybay21) 🎉
  * [Generate Images from Text with AttnGAN](AttnGAN/) by [maybay21](https://github.com/maybay21) 🎉 
  * [Generate Text from Images with im2text](im2txt/) by [Yining Shi](https://1023.io) 🎉
@@ -17,7 +17,7 @@ More RunwayML networking examples [here](https://learn.runwayml.com/#/networking
 
 
 ### Socket.IO
-* [Create Contour Drawings II with PhotoSketch](PhotoSketch/PhotoSketch_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
+* [Create Contour Drawings II with PhotoSketch (Coloring Book)](PhotoSketch/PhotoSketch_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
 * [Image Fast Style Transfer with Webcam](FastStyleTransfer/) by [maybay21](https://github.com/maybay21) 🎉
 * [Image Translation with CycleGAN](CycleGAN/CycleGAN_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
 
