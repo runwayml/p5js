@@ -10,16 +10,16 @@ More RunwayML networking examples [here](https://learn.runwayml.com/#/networking
 
 ### HTTP
  * [Create Contour Drawings I with PhotoSketch (Coloring Book)](PhotoSketch/ColoringBook/) by [JP Yepez](https://www.jpyepez.com) 🎉
- * [Image Translation with CycleGAN](CycleGAN/CycleGAN_HTTP/) by [maybay21](https://github.com/maybay21) 🎉
- * [Generate Images from Text with AttnGAN](AttnGAN/) by [maybay21](https://github.com/maybay21) 🎉 
+ * [Image Translation with CycleGAN](CycleGAN/CycleGAN_HTTP/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
+ * [Generate Images from Text with AttnGAN](AttnGAN/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
  * [Generate Text from Images with im2text](im2txt/) by [Yining Shi](https://1023.io) 🎉
- * [Generate Text with GPT-2](GPT2/) by [maybay21](https://github.com/maybay21) 🎉
+ * [Generate Text with GPT-2](GPT2/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
 
 
 ### Socket.IO
-* [Create Contour Drawings II with PhotoSketch (Coloring Book)](PhotoSketch/PhotoSketch_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
-* [Image Fast Style Transfer with Webcam](FastStyleTransfer/) by [maybay21](https://github.com/maybay21) 🎉
-* [Image Translation with CycleGAN](CycleGAN/CycleGAN_Websockets/) by [maybay21](https://github.com/maybay21) 🎉
+* [Create Contour Drawings II with PhotoSketch (Coloring Book)](PhotoSketch/PhotoSketch_Websockets/) by [[Matthew Kenney](http://matthewkenney.site/) 🎉
+* [Image Fast Style Transfer with Webcam](FastStyleTransfer/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
+* [Image Translation with CycleGAN](CycleGAN/CycleGAN_Websockets/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
 
   
 ## Contributing
