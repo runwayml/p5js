@@ -17,7 +17,7 @@ More RunwayML networking examples [here](https://learn.runwayml.com/#/networking
 
 
 ### Socket.IO
-* [Create Contour Drawings II with PhotoSketch (Coloring Book)](PhotoSketch/PhotoSketch_Websockets/) by [[Matthew Kenney](http://matthewkenney.site/) 🎉
+* [Create Contour Drawings II with PhotoSketch (Coloring Book)](PhotoSketch/PhotoSketch_Websockets/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
 * [Image Fast Style Transfer with Webcam](FastStyleTransfer/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
 * [Image Translation with CycleGAN](CycleGAN/CycleGAN_Websockets/) by [Matthew Kenney](http://matthewkenney.site/) 🎉
 
